@@ -50,11 +50,11 @@ public class Program
         Console.WriteLine("\nMatch Returns true or false");
         foreach (LibraryItem item in items)
         {
-            Console.WriteLine(item.Matches("Book Title"));
+            Console.WriteLine(item.Matches("Book Title"));//Two are true
         }
         foreach (Member item in allMembers)
         {
-            Console.WriteLine(item.Matches("Joel"));
+            Console.WriteLine(item.Matches("Joel"));//One is true
         }
 
     }
