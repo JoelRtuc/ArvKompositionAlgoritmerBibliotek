@@ -47,5 +47,15 @@ public class Program
         Console.WriteLine("\nWhat Books Loaned");
         Console.WriteLine(classManager.WhatBooksLoaned(items));
 
+        Console.WriteLine("\nMatch Returns true or false");
+        foreach (LibraryItem item in items)
+        {
+            Console.WriteLine(item.Matches("Book Title"));
+        }
+        foreach (Member item in allMembers)
+        {
+            Console.WriteLine(item.Matches("Joel"));
+        }
+
     }
 }
